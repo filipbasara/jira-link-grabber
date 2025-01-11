@@ -41,8 +41,8 @@
             // Send a message to the background script to create a notification
             chrome.runtime.sendMessage({
                 type: "show_notification",
-                title: "Jira Links Copied",
-                message: "Jira Links have been copied to the clipboard with formatting!"
+                title: "Jira links successfully copied!",
+                message: "Your Jira links are now ready to be pasted into another application."
             });
         }).catch((err) => {
             console.error("Failed to copy links to clipboard:", err);
@@ -51,8 +51,8 @@
         // Notify the user that no links were found
         chrome.runtime.sendMessage({
             type: "show_notification",
-            title: "No Jira Links Found",
-            message: "No Jira links were found on this page."
+            title: "No Jira links were found!",
+            message: "Please ensure you're viewing a JQL or filter search result."
         });
     }
 }

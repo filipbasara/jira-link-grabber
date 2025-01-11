@@ -20,7 +20,7 @@
             "suggested_key": {
                 "default": "Ctrl+Shift+L"
             },
-            "description": "Parse links on the current webpage"
+            "description": "Copy Jira issues into your clipboard."
         }
     },
     "icons": {

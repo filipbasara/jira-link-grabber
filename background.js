@@ -2,7 +2,7 @@
 chrome.runtime.onInstalled.addListener(() => {
     chrome.contextMenus.create({
         id: "parseLinks",
-        title: "Parse Links for Teams",
+        title: "Grab Jira links now",
         contexts: ["all"]
     });
 });
